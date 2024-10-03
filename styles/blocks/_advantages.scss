@@ -1,0 +1,25 @@
+.advantages{
+    margin-bottom:115px;
+    &-item:nth-child(even) {
+        flex-direction:row-reverse;
+    }
+    &-list{
+        display:flex;
+        flex-direction:column;
+        row-gap:clamp(60px,11.8vw,200px);
+    }
+    &-item{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        column-gap:100px;
+    }
+
+    &_content{
+        max-width:480px;
+        display:flex;
+        flex-direction:column;
+        row-gap:20px;
+    }
+    
+}

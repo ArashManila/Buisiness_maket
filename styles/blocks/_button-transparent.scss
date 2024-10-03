@@ -1,0 +1,19 @@
+.button-transparent{
+    @include reset-button;
+    border: 1px solid rgb(70, 91, 149);
+    height: 40px;
+    border-radius: var(--border-radius);
+    color: var(--color-blue-alt);
+    background-color: transparent;
+    padding-inline: 53px;
+
+    @include hover{
+        cursor:pointer;
+        background-color: var(--color-blue-alt);
+        transition-duration: var(--transition-duration);
+        border: var(--border);
+        color:var(--color-dark-blue)
+    }
+
+
+}

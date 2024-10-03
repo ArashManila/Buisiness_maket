@@ -1,0 +1,85 @@
+.intro-panel{
+    padding-top: 152px;
+    padding-bottom: 258px;
+    position: relative;
+    @include flex-center(true);
+    column-gap:80px;
+    margin-bottom: 175px;
+
+    &__content{
+        display:flex;
+        flex-direction: column;
+        row-gap:15px;
+    }
+
+    &__main{
+        display:flex;
+        flex-direction: column;
+        align-items: start;
+        row-gap:50px;
+        max-width:550px;
+
+        
+    }
+    &__title{
+        font-size:50px;
+        color:#fff;
+        line-height: 1.2;
+        position: relative;
+        
+
+        &::after{
+            content:"";
+            position: absolute;
+            left:-355px;
+            top:-600px;
+            background: url("../../iamges/bg-icon-1.svg") no-repeat;
+            @include square(660);
+            z-index:-2;
+            opacity: 0.7;
+        }
+        &::before{
+            content:"";
+            position: absolute;
+            left:355px;
+            top:-440px;
+            background: url("../../iamges/bg-icon-2.svg") no-repeat;
+            @include square(1440);
+            z-index:-1;
+            opacity: 0.7;
+            
+        }
+    }
+    &__images{
+        width: 360px;
+        height: 250px;
+        padding-top: 50px;
+
+        &::before{
+            content:"";
+            position: absolute;
+            right:-530px;
+            top:70px;
+            background: url("../../iamges/grafikes-big.png") no-repeat;
+            background-color: #fff;
+            width: 800px;
+            height: 550px;
+            border-radius: 30px;
+            box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.2);
+            z-index:-1;
+        }
+    }
+    
+    &__small-pic{
+        position: relative;
+        padding-left:0;
+        z-index:1;
+        box-shadow: 0px 19.22px 53.4px -16.02px rgba(25, 42, 89, 0.2);
+
+        
+    }
+    
+
+
+}
+

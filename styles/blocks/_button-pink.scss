@@ -1,0 +1,15 @@
+.button-pink{
+    @include reset-button;
+    padding-inline:80px;
+    border-radius:var(--border-radius);
+    background-color: var(--color-pink);
+    height: var(--button-height);
+    color:#fff;
+
+    @include hover{
+        cursor:pointer;
+        background-color: var(--color-blue-alt);
+        transition-duration: var(--transition-duration);
+        border: var(--border);
+    }
+}

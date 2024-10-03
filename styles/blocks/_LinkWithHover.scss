@@ -1,0 +1,39 @@
+.link-with-hover{
+      display: inline-flex;
+      position: relative;
+      height: 40px;
+      align-items: center;
+      transition-duration: var(--transition-duration);
+      color:var(--color-blue-alt);
+
+      @include hover{
+        color:var(--color-dark-blue);
+        
+        &::before, &::after{
+          width: 100%;
+        }
+        
+        &::after{
+          background:var(--color-blue-alt);
+          transition-duration: inherit;
+          z-index:-1;
+        }
+      }
+      &::before, &::after{
+        content:"";
+        position: absolute;
+        top: 0;
+	      width: 0;
+	      height: 100%;
+      }
+      &::before{
+        right: 0;
+	      border: 1px solid var(--color-blue-alt);
+	      border-left: 0;
+	      border-right: 0;
+        transition-duration: inherit;	
+      }
+      &::after{
+        left:0;
+      }
+}

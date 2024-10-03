@@ -1,0 +1,30 @@
+:root{
+    --color-dark-blue:#172755;
+    --color-light:#e5e5e5;
+    --color-blue-alt:#8794ba;
+    --color-button-dark:#2a407c;
+    --color-pink:#ef2a82;
+    --color-dark-bg:#0f1f4b;
+
+    //  #465b95   #172755 #0f1f4b  #2a407c #465b95
+
+    --border:1px solid var(--color-button-dark);
+
+    --border-radius:68px;
+    --border-radius-small:30px;
+
+
+    --font-family-base:"Roboto",sans-serif;
+
+    --container-width:1180px;
+    
+
+    --container-padding-x:220px;
+    --container-padding-y:60px;
+
+    --button-height:50px;
+
+    --transition-duration:0.55s;
+
+
+}

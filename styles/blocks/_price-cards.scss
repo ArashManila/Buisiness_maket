@@ -1,0 +1,112 @@
+.price-cards{
+    text-align: center;
+    margin-bottom: 100px;
+    &-header{
+        padding-top:250px;
+        padding-bottom: 80px;
+        display:flex;
+        align-items:center;
+        flex-direction:column;
+        row-gap:30px;
+        
+
+        &-title{
+            color:#fff;
+            font-size:40px;
+
+        }
+        &-title::after{
+            content:"";
+            position: absolute;
+            left:420px;
+            top:50px;
+            background: url("../../iamges/footer-bg.svg") no-repeat;
+            @include square(2100);
+            z-index:-1;
+            opacity: 0.7;
+        }
+
+        &-subtitle{
+
+            max-width:620px;
+        }
+
+    }
+    &-list{
+        @include flex-center();
+
+        column-gap:80px;
+    }
+    &-item{
+        background-color: var(--color-dark-bg);
+        border-radius:var(--border-radius-small);
+        box-shadow: 0px 18px 50px -15px rgb(6, 15, 40);
+        
+        width: 340px;
+        height: 440px;
+        
+        
+    }
+    
+    &-button{
+        height: 50px;
+        width: 200px;
+    }
+
+    &__card{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        padding-inline: 60px;
+
+        &-header{
+            padding-top: 50px;
+            width: 220px;
+            
+        }
+        &-header::after{
+            content:"";
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            translate: -50%;
+            width: calc(100% - 120px);
+            height: 2px;
+            
+            background-color: var(--color-button-dark);
+        }
+                
+        &-status{
+            color:#fff;
+            font-size:30px;
+           
+            
+            
+        }
+        &-content{
+            padding-top: 66px;
+            padding-bottom: 40px;
+            
+        }
+        &-price{
+            font-size:60px;
+            color:#fff;
+            height: 70px;
+           
+        }
+        &--active{
+            background-color: #fff;
+            .price-cards__card-status{
+                color:#000;
+            }
+            .price-cards__card-price{
+                color:#000;
+            }
+            .price-cards__card-header::after{
+                background-color: #d3d9e9;
+            }
+        }
+    }
+
+}
+
