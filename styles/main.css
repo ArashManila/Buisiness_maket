@@ -418,6 +418,7 @@ svg * {
 @media (max-width: 770px) {
   .header-section__header {
     justify-content: space-between;
+    align-items: center;
   }
 }
 .header-section__header-logo {
@@ -755,9 +756,6 @@ svg * {
   display: flex;
   justify-content: space-between;
   align-items: end;
-}
-.contacts-section__logo-img {
-  filter: grayscale(100%);
 }
 .contacts-section__contacts-logo {
   display: inline-flex;
