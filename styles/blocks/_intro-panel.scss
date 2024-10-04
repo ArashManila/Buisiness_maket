@@ -27,6 +27,11 @@
         line-height: 1.2;
         position: relative;
         
+        @include mobile{
+            &::before,&::after{
+                display:none;
+            }
+        }
 
         &::after{
             content:"";
