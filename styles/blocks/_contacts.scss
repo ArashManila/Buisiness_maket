@@ -21,9 +21,7 @@
         display: flex;
         justify-content: space-between;
         align-items: end;
-        // &__logo-img{
-        //     filter:grayscale(100%);
-        // }
+        
         
 
         &__contacts-logo{
@@ -42,10 +40,17 @@
         }
         
     }
-    &-socials{
-        display: flex;
-        
+    &__socials{
+        &-list{
+        @include flex-center(false);
         column-gap:40px;
+        }
+        &-link{
+            @include flex-center();
+            height: 48px;
+            width: 25px;
+        }
+        
     }
    
 

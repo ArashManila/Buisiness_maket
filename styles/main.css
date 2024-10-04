@@ -781,9 +781,18 @@ svg * {
   column-gap: 36px;
   font-size: 14px;
 }
-.contacts-socials {
+.contacts__socials-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
   column-gap: 40px;
+}
+.contacts__socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 25px;
 }
 
 /*# sourceMappingURL=main.css.map */
