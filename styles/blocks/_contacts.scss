@@ -1,9 +1,16 @@
 .contacts{
     position: relative;
     padding-top: 65px;
+    @include mobile{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
     padding-bottom: 100px;
     padding-inline: calc(var(--container-padding-y)*2.7);
     width: 100%;
+    @include mobile{
+        padding-inline: 0;
+    }
 
 
 
@@ -16,11 +23,18 @@
         width: var(--container-width);
         height: 1px;  
         background-color: var(--color-button-dark);
+        @include mobile{
+            width: 100%;
+        }
     }
     &-section{
         display: flex;
         justify-content: space-between;
         align-items: end;
+        @include mobile{
+            width: 100%;
+            column-gap:60px;
+        }
         
         
 
@@ -35,8 +49,8 @@
         &__menu-list{
             display: flex;
             column-gap:36px;
-            //margin-left: -90px;
             font-size: 14px;
+            
         }
         
     }

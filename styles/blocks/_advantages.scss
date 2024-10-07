@@ -2,17 +2,25 @@
     margin-bottom:115px;
     &-item:nth-child(even) {
         flex-direction:row-reverse;
+        @include mobile{
+            flex-direction:column;
+        }
     }
     &-list{
         display:flex;
         flex-direction:column;
         row-gap:clamp(60px,11.8vw,200px);
+        @include mobile{
+            row-gap:60px;
+        }
     }
     &-item{
-        display:flex;
-        justify-content:center;
-        align-items:center;
+        @include flex-center;
         column-gap:100px;
+        @include mobile{
+            flex-direction:column;
+            row-gap:30px;
+        }
     }
 
     &_content{
@@ -20,6 +28,7 @@
         display:flex;
         flex-direction:column;
         row-gap:20px;
+        
     }
     
 }

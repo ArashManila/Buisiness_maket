@@ -7,14 +7,22 @@
         flex-direction:column;
         row-gap:30px;
         &-title{
-            display:flex;
-            justify-content:center;
-            align-items:center;
+            @include flex-center;
+            
         }
         &-subtitle{
             padding-inline:60px;
             text-align:center;
             line-height: 1.5;
+            @include mobile{
+                padding-inline: 0;
+                text-align: left;
+            }
+        }
+
+        @include mobile{
+            justify-content: start;
+            align-items: start;
         }
     }
 
@@ -23,12 +31,22 @@
             display:flex;
             justify-content: center;
             column-gap:20px;
+            @include mobile{
+                flex-direction:column;
+                row-gap:35px;
+                align-items:center;
+            }
         }
         &-item{
             max-width:380px;
             display:flex;
             flex-direction:column;
             row-gap:20px;
+            @include mobile{
+                max-width:100%;
+                flex-direction:row;
+                column-gap:30px;
+            }
         }
         &-image-container{
             @include flex-center(true);
@@ -36,10 +54,16 @@
         &-title{
             text-align:center;
             font-size: 16px;
+            @include mobile{
+                text-align:left;
+            }
         }
         &-subtitle{
             text-align:center;
             line-height:1.4;
+            @include mobile{
+                text-align:left;
+            }
         }
     }
 
