@@ -7,78 +7,88 @@
     <link rel="stylesheet" href="./styles/main.css"/>
 </head>
 <body>
-       <section class=" header-section">
+       <header class=" header-section">
         <div class="header-section__inner container">
-            <header class="header-section__header">
-                <a href="" class="header-section__header-logo">
-                    <img src="./iamges/logo-icon.svg" alt="logo" loading="lazy" width="40" height="40">
-                    <p>Analitics</p>
-                </a>
-                <nav class="header-section__menu hidden-mobile">
-                    <ul class="header-section__menu-list">
-                        <li class="header-section__menu-item">
-                            <a href="/" class="header-section__menu-link link-with-hover">
-                                Products
-                            </a>
-                        </li>
-                        <li class="header-section__menu-item">
-                            <a href="/" class="header-section__menu-link link-with-hover">
-                                Pricing
-                            </a>
-                        </li>
-                        <li class="header-section__menu-item">
-                            <a href="/" class="header-section__menu-link link-with-hover">
-                                FAQ
-                            </a>
-                        </li>
-                        <li class="header-section__menu-item">
-                            <a href="/" class="header-section__menu-link link-with-hover">
-                                Blog
-                            </a>
-                        </li>
-                        <li class="header-section__menu-item">
-                            <a href="/" class="header-section__menu-link link-with-hover">
-                                Blog
-                            </a>
-                        </li>
-                        
-                    </ul>
-                </nav>
-
-                <div class="header-section__login-panel">
-                     <a href="/" class="header-section__login-panel__sign-in link-with-hover">Sign In</a>
-                    <button class="header-section__login-panel__sign-up button-transparent hidden-mobile" type="button">Sign Up</button>
-                    <button class="visable-mobile header-section__login-panel__sign-up-mobile burger-button" 
-                    type="button" 
-                    onclick="mobileOverlay.showModal()">
-                        <img src="./iamges/burger-icon.svg" alt="icon" loading="lazy" width="48" height="48">
-
-                        <span class="visually-hidden">Open menu</span>
-
-                    </button>
-                </div>
-            </header>
+            <div class="header-section__wrapper ">
+                <header class="header-section__header">
+                    <a href="" class="header-section__header-logo">
+                        <img src="./iamges/logo-icon.svg" alt="logo" loading="lazy" width="40" height="40">
+                        <p>Analitics</p>
+                    </a>
+                    <nav class="header-section__menu hidden-mobile">
+                        <ul class="header-section__menu-list">
+                            <li class="header-section__menu-item">
+                                <a href="/" class="header-section__menu-link link-with-hover">
+                                    Products
+                                </a>
+                            </li>
+                            <li class="header-section__menu-item">
+                                <a href="/" class="header-section__menu-link link-with-hover">
+                                    Pricing
+                                </a>
+                            </li>
+                            <li class="header-section__menu-item">
+                                <a href="/" class="header-section__menu-link link-with-hover">
+                                    FAQ
+                                </a>
+                            </li>
+                            <li class="header-section__menu-item">
+                                <a href="/" class="header-section__menu-link link-with-hover">
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="header-section__menu-item">
+                                <a href="/" class="header-section__menu-link link-with-hover">
+                                    Blog
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+    
+                    <div class="header-section__login-panel">
+                         <a href="/" class="header-section__login-panel__sign-in link-with-hover">Sign In</a>
+                        <button class="header-section__login-panel__sign-up button-transparent hidden-mobile" type="button">Sign Up</button>
+                        <button class="visable-mobile header-section__login-panel__sign-up-mobile burger-button" 
+                        type="button" 
+                        onclick="mobileOverlay.showModal()">
+                            <img src="./iamges/burger-icon.svg" alt="icon" loading="lazy" width="48" height="48">
+    
+                            <span class="visually-hidden">Open menu</span>
+    
+                        </button>
+                    </div>
+                </header>
+            </div>
+            
 
             <div class="intro-panel ">
-                <div class="intro-panel__main ">
-                    <div class="intro-panel__content">
-                        <h1 class="intro-panel__title">Monitor your business<br/> on real-time dashboard</h1>
-                        <div class="intro-panel__subtitle">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet
-                             volutpat pellentesque volutpat est.
-                             Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. 
-                            </p>
+                <div class="intro-panel__wrapper">
+                    <div class="intro-panel__inner">
+                        <div class="intro-panel__main ">
+                            <div class="intro-panel__content">
+                                <h1 class="intro-panel__title">Monitor your business<br/> on real-time dashboard</h1>
+                                <div class="intro-panel__subtitle">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet
+                                     volutpat pellentesque volutpat est.
+                                     Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. 
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <button class="intro-panel__button button-pink" type="button">Try for free</button>
+                        </div>
+                        <div class="intro-panel__images">
+                            <img src="./iamges/bg-icon-mobile.png" alt="Alternate grafikes" width="335" height="230" class=" visable-mobile intro-panel__small-pic-mobile " loading="lazy">
+                            <img src="./iamges/grafikes-small.png" alt="Grafikes" width="361" height="247" loading="lazy" class="hidden-mobile intro-panel__small-pic">
                         </div>
                     </div>
                     
-                    <button class="intro-panel__button button-pink" type="button">Try for free</button>
                 </div>
-                <div class="intro-panel__images">
-                    <img src="./iamges/grafikes-small.png" alt="Grafikes" width="361" height="247" loading="lazy" class="intro-panel__small-pic">
-                </div>
+                
             </div>
         </div>
-       </section>
+       </header>
        
        <main>
         <section class="features container">
