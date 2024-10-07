@@ -52,6 +52,9 @@
         @include flex-center();
 
         column-gap:80px;
+        @include mobile{
+            column-gap:20px;
+        }
         
     }
     &-item{

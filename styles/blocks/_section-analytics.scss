@@ -108,7 +108,11 @@
 
     &__sign-up-mobile{
       @include flex-center;
-      @include square(24)
+      @include square(24);
+
+      @include hover{
+        background-color: var(--color-blue-alt);
+      }
     }
   }
 }

@@ -26,6 +26,12 @@
     };
 }
 
+.hidden-tablet{
+    @include tablet{
+        display:none !important;
+    }
+}
+
 .visable-mobile{
     @include mobile-above{
         display: none !important;

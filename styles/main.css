@@ -238,6 +238,12 @@ svg * {
   }
 }
 
+@media (max-width: 1024px) {
+  .hidden-tablet {
+    display: none !important;
+  }
+}
+
 @media (min-width: 771px) {
   .visable-mobile {
     display: none !important;
@@ -296,6 +302,41 @@ svg * {
   background-color: transparent;
 }
 
+.cross-button {
+  padding: 0;
+  color: transparent;
+  border: none;
+  width: 48px;
+  aspect-ratio: 1;
+  position: relative;
+  border-radius: var(--border-radius);
+}
+@media (hover: hover) {
+  .cross-button:hover {
+    background-color: var(--color-blue-alt);
+  }
+}
+@media (hover: none) {
+  .cross-button:active {
+    background-color: var(--color-blue-alt);
+  }
+}
+.cross-button::before, .cross-button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 7px;
+  width: 70%;
+  height: 2px;
+  background-color: var(--color-dark-blue);
+}
+.cross-button::before {
+  rotate: 45deg;
+}
+.cross-button::after {
+  rotate: -45deg;
+}
+
 .button-transparent {
   padding: 0;
   color: transparent;
@@ -324,6 +365,30 @@ svg * {
     border: var(--border);
     color: var(--color-dark-blue);
   }
+}
+
+.mobile-overlay {
+  width: 100%;
+  height: 100%;
+  padding: 14px 20px;
+  margin: 0;
+  border: none;
+}
+.mobile-overlay:modal {
+  max-width: 100%;
+  max-height: 100%;
+}
+.mobile-overlay__close-modal-wrapper {
+  display: flex;
+  justify-content: end;
+}
+.mobile-overlay__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 30px;
+  min-height: 80vh;
 }
 
 .link-with-hover {
@@ -475,6 +540,16 @@ svg * {
   align-items: center;
   width: 24;
   aspect-ratio: 1;
+}
+@media (hover: hover) {
+  .header-section__login-panel__sign-up-mobile:hover {
+    background-color: var(--color-blue-alt);
+  }
+}
+@media (hover: none) {
+  .header-section__login-panel__sign-up-mobile:active {
+    background-color: var(--color-blue-alt);
+  }
 }
 
 .intro-panel {
@@ -783,6 +858,11 @@ svg * {
   justify-content: center;
   align-items: center;
   column-gap: 80px;
+}
+@media (max-width: 770px) {
+  .price-cards-list {
+    column-gap: 20px;
+  }
 }
 .price-cards-item {
   background-color: var(--color-dark-bg);
