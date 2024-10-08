@@ -1,0 +1,1 @@
+Верстка макета [Analytics (Figma)](https://www.figma.com/file/TmCownl50ui0T048tY2pZq/Analytics-%E2%80%94-Landing-Page-Design-(Community)-(Copy)?type=design&node-id=2536-1722&mode=design&t=MtitxkHiwF4cdBPJ-0)
