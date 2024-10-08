@@ -219,6 +219,10 @@ svg * {
   }
 }
 
+.hidden-scroll {
+  overflow: hidden;
+}
+
 .visually-hidden {
   position: absolute !important;
   width: 1px !important;
@@ -518,16 +522,31 @@ svg * {
 .header-section__menu {
   margin-left: 96px;
 }
+@media (max-width: 1024px) {
+  .header-section__menu {
+    margin-left: auto;
+  }
+}
 .header-section__menu-list {
   display: flex;
   flex-direction: row;
   column-gap: 36px;
+}
+@media (max-width: 1024px) {
+  .header-section__menu-list {
+    column-gap: 15px;
+  }
 }
 .header-section__login-panel {
   margin-left: auto;
   display: flex;
   align-items: center;
   column-gap: 40px;
+}
+@media (max-width: 1024px) {
+  .header-section__login-panel {
+    column-gap: 10px;
+  }
 }
 @media (max-width: 770px) {
   .header-section__login-panel {
@@ -601,6 +620,11 @@ svg * {
     row-gap: 30px;
   }
 }
+@media (max-width: 1024px) {
+  .intro-panel__main {
+    max-width: 300px;
+  }
+}
 .intro-panel__title {
   font-size: 50px;
   color: #fff;
@@ -651,10 +675,15 @@ svg * {
     display: none;
   }
 }
+@media (max-width: 1430px) {
+  .intro-panel__images::before {
+    display: none;
+  }
+}
 .intro-panel__images::before {
   content: "";
   position: absolute;
-  right: -125px;
+  right: -20px;
   top: 70px;
   background: url("../../iamges/grafikes-big.png") no-repeat;
   background-color: #fff;
@@ -669,6 +698,11 @@ svg * {
   padding-left: 0;
   z-index: 1;
   box-shadow: 0px 19.22px 53.4px -16.02px rgba(25, 42, 89, 0.2);
+}
+@media (max-width: 1024px) {
+  .intro-panel__small-pic {
+    width: 100%;
+  }
 }
 .intro-panel__small-pic-mobile {
   width: 100%;
@@ -773,7 +807,7 @@ svg * {
 .advantages-item:nth-child(even) {
   flex-direction: row-reverse;
 }
-@media (max-width: 770px) {
+@media (max-width: 1024px) {
   .advantages-item:nth-child(even) {
     flex-direction: column;
   }
@@ -794,7 +828,7 @@ svg * {
   align-items: center;
   column-gap: 100px;
 }
-@media (max-width: 770px) {
+@media (max-width: 1024px) {
   .advantages-item {
     flex-direction: column;
     row-gap: 30px;
@@ -959,13 +993,13 @@ svg * {
   padding-inline: calc(var(--container-padding-y) * 2.7);
   width: 100%;
 }
-@media (max-width: 770px) {
+@media (max-width: 1024px) {
   .contacts {
     padding-top: 50px;
     padding-bottom: 50px;
   }
 }
-@media (max-width: 770px) {
+@media (max-width: 1024px) {
   .contacts {
     padding-inline: 0;
   }
@@ -980,7 +1014,7 @@ svg * {
   height: 1px;
   background-color: var(--color-button-dark);
 }
-@media (max-width: 770px) {
+@media (max-width: 1024px) {
   .contacts::before {
     width: 100%;
   }
@@ -990,7 +1024,7 @@ svg * {
   justify-content: space-between;
   align-items: end;
 }
-@media (max-width: 770px) {
+@media (max-width: 1024px) {
   .contacts-section {
     width: 100%;
     column-gap: 60px;

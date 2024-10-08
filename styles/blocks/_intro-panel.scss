@@ -42,6 +42,9 @@
         @include mobile{
             row-gap:30px;
         }
+        @include tablet{
+            max-width:300px;
+        }
         
        
 
@@ -96,10 +99,16 @@
             
         }
 
+        @include desktop{
+            &::before{
+                display:none;
+            }
+        }
+
         &::before{
             content:"";
             position: absolute;
-            right:-125px;
+            right:-20px;
             top:70px;
             background: url("../../iamges/grafikes-big.png") no-repeat;
             background-color: #fff;
@@ -116,6 +125,11 @@
         padding-left:0;
         z-index:1;
         box-shadow: 0px 19.22px 53.4px -16.02px rgba(25, 42, 89, 0.2);
+
+        @include tablet{
+            width: 100%;
+        }
+
         &-mobile{
             width: 100%;
             padding-bottom: 30px;

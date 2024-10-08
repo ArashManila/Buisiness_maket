@@ -1,14 +1,14 @@
 .contacts{
     position: relative;
     padding-top: 65px;
-    @include mobile{
+    @include tablet{
         padding-top: 50px;
         padding-bottom: 50px;
     }
     padding-bottom: 100px;
     padding-inline: calc(var(--container-padding-y)*2.7);
     width: 100%;
-    @include mobile{
+    @include tablet{
         padding-inline: 0;
     }
 
@@ -23,7 +23,7 @@
         width: var(--container-width);
         height: 1px;  
         background-color: var(--color-button-dark);
-        @include mobile{
+        @include tablet{
             width: 100%;
         }
     }
@@ -31,7 +31,7 @@
         display: flex;
         justify-content: space-between;
         align-items: end;
-        @include mobile{
+        @include tablet{
             width: 100%;
             column-gap:60px;
         }

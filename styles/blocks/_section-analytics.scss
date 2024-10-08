@@ -85,11 +85,17 @@
   
   &__menu {
     margin-left: 96px;
+    @include tablet{
+      margin-left: auto;
+    }
 
     &-list {
       display: flex;
       flex-direction: row;
       column-gap: 36px;
+      @include tablet{
+        column-gap:15px;
+      }
       
     }
     
@@ -102,6 +108,9 @@
     display: flex;
     align-items: center;
     column-gap: 40px;
+    @include tablet{
+      column-gap:10px;
+    }
     @include mobile{
       column-gap:30px;
     }
