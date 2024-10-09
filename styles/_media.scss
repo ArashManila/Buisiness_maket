@@ -8,38 +8,38 @@ $mobile:770px;
 $mobile-above:771px;
 
 @mixin desktop-above{
-    @media(min-width:$desktop-above){
+    @media(width > $desktop-above){
         @content;
     }
 }
 
 @mixin tablet-above{
-    @media(min-width:$tablet-above){
+    @media(width > $tablet-above){
         @content;
     }
 }
 
 @mixin mobile-above{
-    @media(min-width:$mobile-above){
+    @media(width > $mobile-above){
         @content;
     }
 }
 
 
 @mixin desktop{
-    @media(max-width:$desktop){
+    @media(width < $desktop){
         @content;
     }
 }
 
 @mixin tablet{
-    @media(max-width:$tablet){
+    @media(width < $tablet){
         @content;
     }
 }
 
 @mixin mobile{
-    @media(max-width:$mobile){
+    @media(width < $mobile){
         @content;
     }
 }
